@@ -158,5 +158,22 @@
 # print(freq)    
 # Remove duplicate elements from a list using a set.
 # Q10. Find common elements between two lists.
-for  i in range (1,101,1):
-    print(i ,end=" ")
+# for  i in range (1,101,1):
+#     print(i ,end=" ")
+
+# hello=100
+# if hello==100 :
+#     print("hello x10")
+# else: 
+#     print("none")
+# for i in range (1,6):
+#     if i==3:
+#         continue
+#     print(i)
+
+#n=int(input("enter a number :"))
+#for i in range(n,0,+2):
+#    print(i,end=" ")
+# n=int(input("enter a number :"))
+# for i in range(2,n+1,2):
+#     print(i ,end="")
