@@ -160,7 +160,6 @@
 # Q10. Find common elements between two lists.
 # for  i in range (1,101,1):
 #     print(i ,end=" ")
-
 # hello=100
 # if hello==100 :
 #     print("hello x10")
@@ -177,3 +176,17 @@
 # n=int(input("enter a number :"))
 # for i in range(2,n+1,2):
 #     print(i ,end="")
+# Given a list of numbers, print each element on a new line.
+# l = []
+
+# n = int(input())
+
+# for i in range(n):
+#     x = int(input())
+#     l.append(x)
+
+# for i in l:
+#     print(i)
+a="hello"
+b="world"
+c=a+b
