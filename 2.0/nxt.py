@@ -187,6 +187,9 @@
 
 # for i in l:
 #     print(i)
-a="hello"
+a="hello world"
 b="world"
-c=a+b
+if b in a:
+    print("sub")
+else:
+    print("not a sub")
