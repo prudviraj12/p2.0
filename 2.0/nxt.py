@@ -187,9 +187,51 @@
 
 # for i in l:
 #     print(i)
-a="hello world"
-b="world"
-if b in a:
-    print("sub")
-else:
-    print("not a sub")
+# a="hello world"
+# b="world"
+# if b in a:
+#     print("sub")
+# else:
+#     print("not a sub")  
+# p1=0
+# p2=1
+# print(p1)
+# print(p2)
+# for i in range (3):
+#     new=p1+p2
+#     print(new)
+#     p1=p2
+#     p2=new
+
+# n = int(input())
+# l = []
+
+# for i in range(n):
+#     l.append(int(input()))
+
+# mod=l[0]
+# for i in range(len(l)):
+#     if mod<l[i]:
+#         new=mod
+#     else:
+#         pass
+# print(new)
+
+# my_array=list(map(int,input().split()))
+# n = len(my_array)
+# for i in range(n-1):
+#     for j in range(n-i-1):
+#         if my_array[j] > my_array[j+1]:
+#             my_array[j], my_array[j+1] = my_array[j+1], my_array[j]
+
+# print("Sorted array:", my_array)
+# my_array = list(map(int, input("Enter numbers separated by space: ").split()))
+
+# n = len(my_array)
+
+# for i in range(n - 1):
+#     for j in range(n - i - 1):
+#         if my_array[j] > my_array[j + 1]:
+#             my_array[j], my_array[j + 1] = my_array[j + 1], my_array[j]
+
+# print("Sorted array:", my_array)        
