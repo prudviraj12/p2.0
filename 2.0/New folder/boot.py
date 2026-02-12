@@ -44,6 +44,52 @@
 # print(s.startswith("py"))
 # print(s.lower())
 # print(s.title())
-list=[]
-print(list)
-print(type(list))
+# list=[]
+# print(list)
+# print(type(list))
+# l=list(range(0,10,2))
+# print(l)
+# print(type(l))
+# l=[10,20,30]
+# print(l[0]>=10)
+# f=["apple","banana"]
+# f.insert(1,"cherry")
+# print(f)
+#  mop=l[0]
+# mat=l[0]
+# for num in l:
+#     if num>mop:
+#         mop=num
+#     if num < mat:
+#         mat=num
+# print(mop)
+# print(mat)
+# l=[10,20,30,40,50,30,10,20,40]
+# c=0
+# for i in range (len(l)):
+#     mop=l[i]
+
+#     if l[i]==mop:
+#         mop=l[i]
+#         c+=1
+    
+# print(mop)
+# l = [10,20,30,40,50,30,10,20,40]
+# unique = []
+# for num in l:
+#     if l.count(num) == 1:
+#         unique.append(num)
+# print(unique)
+# l=[1,2,3,4,5,6,7,8,9,-1,-2,-3,-4,-5]
+# pos=[]
+# neg=[]
+# for i in range(len(l)):
+#     if l[i]>0:
+#         pos.append(l[i])
+#     if l[i]<0:
+#         neg.append(l[i])
+# print(pos)
+# print(neg)
+l =list(map(int,input().split()))
+print(l)
+
