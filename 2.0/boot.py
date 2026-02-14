@@ -72,7 +72,6 @@
 #     if l[i]==mop:
 #         mop=l[i]
 #         c+=1
-    
 # print(mop)
 # l = [10,20,30,40,50,30,10,20,40]
 # unique = []
@@ -90,6 +89,18 @@
 #         neg.append(l[i])
 # print(pos)
 # print(neg)
-l =list(map(int,input().split()))
-print(l)
+# l =list(map(int,input().split()))
+# print(l)
 
+
+# def sum(n):
+#     if n==0:
+#         return 0
+#     else:
+#         return sum+sum(n-1)
+# n=int(input())
+# sum(n)    
+for i in range(1, 5):
+    for j in range(i):
+        print(i, end=' ')
+    print()
