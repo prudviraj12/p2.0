@@ -235,3 +235,45 @@
 #             my_array[j], my_array[j + 1] = my_array[j + 1], my_array[j]
 
 # print("Sorted array:", my_array)        
+# import random
+# print("-----NUMBER GAME ----")
+# print("select the difficultyy")
+# print("1.EASY")
+# print("2.MEDIUM")
+# print("3.HARD")
+
+# choice=int(input("enter a num between 1 to 3:"))
+# if choice==1:
+#     start=1
+#     end=10
+#     atempts=5
+# elif choice==2:
+#     start=1
+#     end=50
+#     atempts=7
+# elif choice==3:
+#     start=1
+#     end=100
+#     atempts=10
+# else:
+#     print("number greater than 3",end=''"GAME OVER")
+#     exit()
+# num=random.randint(start,end)  
+# print("guess the num between ",start,"and",end)
+# while atempts>0:
+#     print("Attempts left:", atempts)
+#     guess=int(input())
+#     if num>guess:
+#         print("TOO LOW ")  
+#     elif num<guess:
+#         print("TOO HIGH")
+#     else:
+#         print("you won") 
+#         score=atempts*20
+#         print("your score :",score)
+#     atempts-=1
+    
+# if atempts==0:
+#     print("game over u can even win this simple game")
+
+
