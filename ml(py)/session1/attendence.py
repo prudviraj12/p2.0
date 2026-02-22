@@ -20,9 +20,9 @@ while True:
         name = input("Enter student name: ")
         if name in students:
             status = input("Enter P for Present or A for Absent: ")
-            if status == "P":
+            if status == "P"or 'p':
                 students[name] = "Present"
-            elif status == "A":
+            elif status == "A"or 'a':
                 students[name] = "Absent"
             else:
                 print("Invalid input.")
