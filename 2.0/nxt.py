@@ -277,3 +277,106 @@
 #     print("game over u can even win this simple game")
 
 
+# try:
+#     password = input().strip()
+# except EOFError:
+#     password = ""
+# if password == "":
+#     print("Password cannot be empty.")
+# else:
+#     has_upper = any(c.isupper() for c in password)
+#     has_lower = any(c.islower() for c in password)
+#     has_digit = any(c.isdigit() for c in password)
+#     has_special = any(not c.isalnum() for c in password)
+#     if len(password) < 6:
+#         strength = "Weak"
+#     elif len(password) >= 8 and has_upper and has_lower and has_digit and has_special:
+#         strength = "Strong"
+#     else:
+#         strength = "Medium"
+#     print(f"Password Strength: {strength}")
+# try:
+#     password=input().strip()
+# except EOFError:
+#     password=""
+# if password=="":
+#     print("Password cannot be empty.")
+# else:
+#     upper=any(c.isupper() for c in password)
+#     special=any ( not c.isalnum() for c in password)
+# students = {}
+# while True:
+#     try:
+#         choice = input().strip()
+#     except:
+#         break
+#     if choice == "1":
+#         name = input().strip()
+#         if name in students:
+#             print("Student already exists.")
+#         else:
+#             students[name] = "Absent"
+#             print("Student added successfully.")
+#     elif choice == "2":
+#         name = input().strip()
+#         if name not in students:
+#             print("Student not found.")
+#         else:
+#             status = input().strip()
+#             if status == "P":
+#                 students[name] = "Present"
+#                 print("Attendance marked as Present.")
+#             elif status == "A":
+#                 students[name] = "Absent"
+#                 print("Attendance marked as Absent.")
+#             else:
+#                 print("Invalid input.")
+#     elif choice == "3":
+#         if not students:
+#             print("No attendance records.")
+#         else:
+#             for name in students:
+#                 print(f"{name} : {students[name]}")
+#     elif choice == "4":
+#         if not students:
+#             print("No attendance data.")
+#         else:
+#             total = len(students)
+#             present = sum(1 for s in students.values() if s == "Present")
+#             absent = total - present
+#             print(f"Total Students : {total}")
+#             print(f"Present        : {present}")
+#             print(f"Absent         : {absent}")
+#     elif choice == "5":
+#         print("Program ended.")
+#         break
+total = 0
+
+while True:
+    print("----- Online Food Ordering System -----")
+    print("1. Pizza - ₹200")
+    print("2. Burger - ₹120")
+    print("3. Sandwich - ₹100")
+    print("4. Exit")
+
+    choice = int(input("Enter your choice: "))
+
+    if choice == 4:
+        break
+
+    quantity = int(input("Enter quantity: "))
+
+    if choice == 1:
+        total += 200 * quantity
+    elif choice == 2:
+        total += 120 * quantity
+    elif choice == 3:
+        total += 100 * quantity
+    else:
+        print("Invalid choice")
+
+    print("Current Total Bill: ₹", total)
+    print()
+
+print("Final Total Bill: ₹", total)
+    
