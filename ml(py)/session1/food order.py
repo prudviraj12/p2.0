@@ -34,21 +34,16 @@
     
     
 total = 0
-
 while True:
     print("----- Online Food Ordering System -----")
     print("1. Pizza - ₹200")
     print("2. Burger - ₹120")
     print("3. Sandwich - ₹100")
     print("4. Exit")
-
     choice = int(input("Enter your choice: "))
-
     if choice == 4:
         break
-
     quantity = int(input("Enter quantity: "))
-
     if choice == 1:
         total += 200 * quantity
     elif choice == 2:
@@ -57,8 +52,7 @@ while True:
         total += 100 * quantity
     else:
         print("Invalid choice")
-
     print("Current Total Bill: ₹", total)
     print()
-
 print("Final Total Bill: ₹", total)
+
