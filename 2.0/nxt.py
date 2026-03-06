@@ -352,31 +352,124 @@
 #         break
 total = 0
 
-while True:
-    print("----- Online Food Ordering System -----")
-    print("1. Pizza - ₹200")
-    print("2. Burger - ₹120")
-    print("3. Sandwich - ₹100")
-    print("4. Exit")
+# while True:
+#     print("----- Online Food Ordering System -----")
+#     print("1. Pizza - ₹200")
+#     print("2. Burger - ₹120")
+#     print("3. Sandwich - ₹100")
+#     print("4. Exit")
 
-    choice = int(input("Enter your choice: "))
+#     choice = int(input("Enter your choice: "))
 
-    if choice == 4:
-        break
+#     if choice == 4:
+#         break
 
-    quantity = int(input("Enter quantity: "))
+#     quantity = int(input("Enter quantity: "))
 
-    if choice == 1:
-        total += 200 * quantity
-    elif choice == 2:
-        total += 120 * quantity
-    elif choice == 3:
-        total += 100 * quantity
-    else:
-        print("Invalid choice")
+#     if choice == 1:
+#         total += 200 * quantity
+#     elif choice == 2:
+#         total += 120 * quantity
+#     elif choice == 3:
+#         total += 100 * quantity
+#     else:
+#         print("Invalid choice")
 
-    print("Current Total Bill: ₹", total)
-    print()
+#     print("Current Total Bill: ₹", total)
+#     print()
 
-print("Final Total Bill: ₹", total)
-    
+# print("Final Total Bill: ₹", total)
+# a=p*(1+r/100)**t
+# ci=a-p
+# for i in range(5, 0, -1):
+#     for j in range(6 - i):
+#         print(i, end=" ")
+#     print()
+# def palindrome(s):
+#     if s == s[::-1]:
+#         return True
+#     else:
+#         return False
+# word = input("Enter a string: ")
+# print(palindrome(word))
+# def is_sorted(lst):
+#     for i in range(len(lst)-1):
+#         if lst[i] > lst[i+1]:
+#             return False
+#     return True
+
+# numbers = [1,2,3,4,5]
+
+# print(is_sorted(numbers))
+# def is_sorted(lst):
+#     for i in range(len(lst)-1):
+#         if lst[i] > lst[i+1]:
+#             return False
+#     return True
+
+# num=list(map(int,input().split()))
+
+# print(is_sorted(num))
+class node:
+    def __init__(self,data):
+        self.data=data
+        self.next=None
+class sll:
+    def __init__(self):
+        self.head=None
+    def dis(self):
+        if self.head is  None:
+            print("list ius empty")
+        temp=self.head
+        while temp is not None:
+            print(temp.data,end="->")
+            temp=temp.next
+        print("None")
+    def insert_begin(self,data):
+        nb=node(data)
+        nb.next=self.head
+        self.head=nb
+    def insert_end(self,data):
+        ne=node(data)
+        temp=self.head
+        while temp.next is not None:
+            temp=temp.next
+        temp.next=ne
+    def insert_pos(self,pos,data):
+        np=node(data)
+        temp=self.head
+        for i in range(1,pos-1):
+            temp=temp.next
+        np.next=temp.next
+        temp.next=np
+    def del_begin(self):
+        temp=self.head
+        self.head=self.head.next
+        temp.next=None
+    def del_end(self):
+        prev=self.head
+        temp=prev.next
+        while temp.next is not None:
+            prev=prev.next
+            temp=temp.next
+        prev.next=None
+    def del_pos(self,pos):
+        prev=self.head
+        temp=prev.next
+        for i in range (1,pos-1):
+            prev=prev.next
+            temp=temp.next
+        prev.next=temp.next
+        temp.next=None
+l=sll()
+n=node(10)
+n1=node(20)
+n2=node(30)
+l.head=n
+n.next=n1
+n1.next=n2
+l.dis()
+l.insert_begin(5)
+l.dis()
+l.insert_end(90)
+l.dis()
