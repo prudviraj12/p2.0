@@ -410,66 +410,97 @@ total = 0
 # num=list(map(int,input().split()))
 
 # print(is_sorted(num))
-class node:
+# class node:
+#     def __init__(self,data):
+#         self.data=data
+#         self.next=None
+# class sll:
+#     def __init__(self):
+#         self.head=None
+#     def dis(self):
+#         if self.head is  None:
+#             print("list ius empty")
+#         temp=self.head
+#         while temp is not None:
+#             print(temp.data,end="->")
+#             temp=temp.next
+#         print("None")
+#     def insert_begin(self,data):
+#         nb=node(data)
+#         nb.next=self.head
+#         self.head=nb
+#     def insert_end(self,data):
+#         ne=node(data)
+#         temp=self.head
+#         while temp.next is not None:
+#             temp=temp.next
+#         temp.next=ne
+#     def insert_pos(self,pos,data):
+#         np=node(data)
+#         temp=self.head
+#         for i in range(1,pos-1):
+#             temp=temp.next
+#         np.next=temp.next
+#         temp.next=np
+#     def del_begin(self):
+#         temp=self.head
+#         self.head=self.head.next
+#         temp.next=None
+#     def del_end(self):
+#         prev=self.head
+#         temp=prev.next
+#         while temp.next is not None:
+#             prev=prev.next
+#             temp=temp.next
+#         prev.next=None
+#     def del_pos(self,pos):
+#         prev=self.head
+#         temp=prev.next
+#         for i in range (1,pos-1):
+#             prev=prev.next
+#             temp=temp.next
+#         prev.next=temp.next
+#         temp.next=None
+# l=sll()
+# n=
+# l.dis()
+
+# l.inser
+class Node:
     def __init__(self,data):
         self.data=data
         self.next=None
-class sll:
+
+class LinkedList:
     def __init__(self):
         self.head=None
-    def dis(self):
-        if self.head is  None:
-            print("list ius empty")
+
+    def insert_end(self,val):
+        new=Node(val)
+
+        if self.head is None:
+            self.head=new
+            return
+
         temp=self.head
-        while temp is not None:
-            print(temp.data,end="->")
+        while temp.next:
             temp=temp.next
-        print("None")
-    def insert_begin(self,data):
-        nb=node(data)
-        nb.next=self.head
-        self.head=nb
-    def insert_end(self,data):
-        ne=node(data)
+
+        temp.next=new
+
+    def display(self):
         temp=self.head
-        while temp.next is not None:
+        while temp:
+            print(temp.data,end=" ")
             temp=temp.next
-        temp.next=ne
-    def insert_pos(self,pos,data):
-        np=node(data)
-        temp=self.head
-        for i in range(1,pos-1):
-            temp=temp.next
-        np.next=temp.next
-        temp.next=np
-    def del_begin(self):
-        temp=self.head
-        self.head=self.head.next
-        temp.next=None
-    def del_end(self):
-        prev=self.head
-        temp=prev.next
-        while temp.next is not None:
-            prev=prev.next
-            temp=temp.next
-        prev.next=None
-    def del_pos(self,pos):
-        prev=self.head
-        temp=prev.next
-        for i in range (1,pos-1):
-            prev=prev.next
-            temp=temp.next
-        prev.next=temp.next
-        temp.next=None
-l=sll()
-n=node(10)
-n1=node(20)
-n2=node(30)
-l.head=n
-n.next=n1
-n1.next=n2
-l.dis()
-l.insert_begin(5)
-l.dis()
-l.insert_end(90)
-l.dis()
+
+
+n=int(input())
+
+ll=LinkedList()
+
+for _ in range(n):
+    x=int(input())
+    ll.insert_end(x)
+
+ll.display()
